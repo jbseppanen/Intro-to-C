@@ -9,7 +9,13 @@
 */
 int string_length(char *s)
 {
-
+    int counter = 0;
+    while ((&s+counter) != NULL)
+    {
+       counter++;
+    }
+    printf(counter);
+  return counter;  
 }
 
 /*
@@ -20,6 +26,7 @@ int string_length(char *s)
 */
 char *reverse_string(char *rv, char *s)
 {
+    int s_len = string_length(*s);
 
 }
 
