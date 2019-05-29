@@ -15,6 +15,17 @@ char *string_dup(char *src)
 
 }
 
+int string_length(char *s)
+{
+    int counter = 0;
+    while (*(s + counter) != '\0')
+    {
+        counter++;
+    }
+    return counter;
+}
+
+
 /*
     A generic version of string_copy, mem_copy receives a block of memory
     of any type and copies its contents to the destination pointer (dest).
